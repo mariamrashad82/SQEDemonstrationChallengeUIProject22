@@ -1,5 +1,6 @@
 package com.sample.test.demo;
 
+//import static junit.framework.Assert.assertTrue;
 import static org.testng.Assert.assertTrue;
 import java.io.IOException;
 import java.io.InputStream;

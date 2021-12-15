@@ -6,22 +6,29 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+
 public class TestBase {
 
     private Configuration config;
-    protected WebDriver driver;
-    protected String url;
+    public WebDriver driver;
+    public String url;
 
-    @BeforeClass(alwaysRun = true)
+
+
+        @BeforeClass(alwaysRun = true)
     public void init() throws Throwable {
         config = new Configuration();
         url = config.getUrl();
         initializelDriver();
         navigateToSite();
-    }
+
+
+        }
 
     private void navigateToSite() {
         driver.get(url);
+
+
     }
 
     @AfterClass(alwaysRun = true)
